@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!-- html je osnovin elemnt koj predstavlja jedan html dokument -->
+<html lang="en">
+  <!-- head je osnovni element koji se koristi za opis sta se nalazi na stranici
+     i korsnik ne vidi nista sto se nalazi u headu na stranici -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- link html element se koristi da se na html starnici dodaju druge stranice razlicitih tipova -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- style html elment se koristi za dodavanje css na stranicu -->
+    <style>
+      /* ovaj kod se zove selektor, podeljen je na dva dela, prvi deo (p) kojim odabiramo nesto na stranici,
+      drugi unutar zagrada {} gde definisemo pravila koja se trebaju primeniti na onome sto smo odabrali */
+      p {
+        color: blue;
+      }
+
+      /* kalasa se koristi na vise elementa, a id samo na jednom elementu */
+      .mojaKlasa {
+        width: 200px;
+        height: 200px;
+      }
+
+      #test {
+        background-color: orange;
+      }
+    </style>
+  </head>
+
+  <!-- body je osnovi html element u kome se nalaze svi ostali html elemnti koje korsnik vidi -->
+  <body>
+    <p id="test">Neki tekst</p>
+    <h1 class="mojaKlasa">Neki tekst</h1>
+
+    <!-- href atribut na a html elemntu koji se koristi samo na ovom elementu -->
+    <a href="https://www.google.com">Link ka googlu</a>
+
+    <!-- atributi koji najcesce koriste su class i id -->
+    <p class="" id="" style="color: red">ovaj tekst je boje</p>
+
+    <!-- koristi se za slike -->
+    <img
+      src="https://www.slikomania.rs/fotky6509/fotos/CWF1930ME1.jpg"
+      alt=""
+      width="400px"
+      height="400px"
+    />
+
+    <!-- input html element se koristi za unos podataka od strane korisnika, postoje vise vrsta (type) inputa
+     text, number, range, email -->
+    <!-- form html element sluzi za slanje svih podataka unutar forme na neku drugu internet stranicu 
+      action je stranica na koju se salju podaci, method je nacin na koji saljemo podatke (POST, GEt) -->
+    <form action="">
+      <input type="text" />
+      <input type="number" />
+      <input type="range" min="0" max="100" />
+      <input type="email" />
+    </form>
+  </body>
+</html>
